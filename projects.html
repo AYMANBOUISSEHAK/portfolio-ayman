@@ -1,159 +1,308 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayman Bouissehak – Projects</title>
+    <meta name="description" content="Cybersecurity, parallel computing, cloud, and system security projects by Ayman Bouissehak.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<!-- ===== NAVIGATION ===== -->
 <nav class="navbar">
     <div class="container">
         <div class="logo">
-            <img src="logo-ayman.png" alt="Ayman Bouissehak" class="logo-img">
+            <img src="logo-ayman.png" alt="Ayman Bouissehak logo" class="logo-img">
         </div>
+
         <ul class="nav-links">
             <li><a href="index.html">About</a></li>
-            <li><a href="toolbox.html">ToolBox</a></li>
+            <li><a href="toolbox.html">Toolbox</a></li>
             <li><a href="projects.html" class="active">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+
         <div class="menu-toggle">
             <i class="fas fa-bars"></i>
         </div>
     </div>
 </nav>
 
-<!-- ===== PAGE PROJECTS ===== -->
 <main class="page projects-page">
     <div class="container">
-        
-        <h1 class="section-title">Recent Projects</h1>
-        
-        <!-- Filtres "All" -->
-        <div class="project-filters">
-            <button class="filter-btn active">All</button>
-        </div>
-        
-        <!-- Grille de projets -->
-        <div class="projects-grid">
-            
-            <!-- PROJET 1 - PhishGuard AI -->
-            <div class="project-item">
-                <div class="project-icon">
-                    <i class="fas fa-shield-halved"></i>
+
+        <section class="projects-hero">
+            <p class="projects-kicker">Selected Work</p>
+            <h1 class="section-title">Projects</h1>
+            <p class="section-intro">
+                A selection of projects in cybersecurity, parallel computing, system protection,
+                and secure application development.
+            </p>
+        </section>
+
+        <section class="featured-project">
+            <div class="featured-badge">Featured Project</div>
+
+            <div class="featured-content">
+                <div class="featured-left">
+                    <div class="featured-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
                 </div>
-                <div class="project-content">
-                    <h3>PhishGuard AI</h3>
-                    <p class="project-category">Cybersécurité & IA</p>
-                    <p class="project-desc">Application de détection de phishing avec chatbot intelligent et analyse d'URLs suspects en temps réel.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/AYMANBOUISSEHAK/phishguard-ai" target="_blank"><i class="fab fa-github"></i> Code source</a>
-                        <a href="https://drive.google.com/drive/folders/16ju3fmBohSTSEwzdqwVhoxkRvgkX0FIP" target="_blank"><i class="fas fa-file-pdf"></i> Rapport détaillé</a>
+
+                <div class="featured-right">
+                    <p class="featured-category">Cybersecurity & Artificial Intelligence</p>
+                    <h2>PhishGuard AI</h2>
+                    <p class="featured-desc">
+                        Developed an intelligent phishing detection application with chatbot support
+                        and suspicious URL analysis in real time. This project combines cybersecurity
+                        and AI to improve threat detection and user awareness.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>AI</span>
+                        <span>Phishing Detection</span>
+                        <span>Cybersecurity</span>
+                        <span>Chatbot</span>
+                    </div>
+
+                    <div class="project-links project-links-featured">
+                        <a href="https://github.com/AYMANBOUISSEHAK/phishguard-ai" target="_blank" class="project-btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="Rapport PHISHGUARD .pdf" target="_blank" class="project-btn secondary">
+                            <i class="fas fa-file-pdf"></i> Report
+                        </a>
                     </div>
                 </div>
             </div>
-            
-            <!-- PROJET 2 - RSA Parallèle -->
-            <div class="project-item">
-                <div class="project-icon">
-                    <i class="fas fa-lock"></i>
-                </div>
-                <div class="project-content">
-                    <h3>RSA Parallèle</h3>
-                    <p class="project-category">Cryptographie & Parallélisme</p>
-                    <p class="project-desc">Implémentation de RSA en versions séquentielle et parallèle (MPI, CUDA, UPC) avec benchmarks de performance.</p>
+        </section>
+
+        <section class="projects-list">
+            <div class="projects-grid">
+
+                <div class="project-item">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="project-head">
+                            <p class="project-category">Cryptography & Parallel Computing</p>
+                            <h3>RSA Parallel Encryption</h3>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        Implemented RSA in sequential and parallel versions using MPI, CUDA, and UPC,
+                        with comparative performance benchmarks across architectures.
+                    </p>
+                    <div class="project-tags">
+                        <span>RSA</span>
+                        <span>MPI</span>
+                        <span>CUDA</span>
+                        <span>UPC</span>
+                    </div>
                     <div class="project-links">
-                        <a href="https://drive.google.com/drive/folders/1hELBoRDIPIVX-gLOB1OZIDCQhx8GA7pB" target="_blank"><i class="fas fa-code"></i> Code source</a>
-                        <a href="https://drive.google.com/drive/folders/1wxNTOlcYYdg523t2kh2MXF9lBuOeY5-g" target="_blank"><i class="fas fa-file-pdf"></i> Rapport détaillé</a>
+                        <a href="RAPPORT DU PROJET RSA.pdf" target="_blank" class="project-btn secondary">
+                            <i class="fas fa-file-pdf"></i> Report
+                        </a>
                     </div>
                 </div>
-            </div>
-            
-            <!-- PROJET 3 - Password Strength Analyzer -->
-            <div class="project-item">
-                <div class="project-icon">
-                    <i class="fas fa-key"></i>
-                </div>
-                <div class="project-content">
-                    <h3>Password Analyzer</h3>
-                    <p class="project-category">Sécurité & Cloud</p>
-                    <p class="project-desc">Analyseur de force de mots de passe avec vérification blacklist, déployé sur Azure avec 5 services cloud.</p>
+
+                <div class="project-item">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="project-head">
+                            <p class="project-category">System Hardening & Security Testing</p>
+                            <h3>Enterprise OS Security Environment</h3>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        Designed and secured an environment including Windows Server, Linux, and Kali,
+                        with SSH hardening, Active Directory configuration, and security testing.
+                    </p>
+                    <div class="project-tags">
+                        <span>Windows Server</span>
+                        <span>Linux</span>
+                        <span>Hardening</span>
+                        <span>Nmap</span>
+                    </div>
                     <div class="project-links">
-                        <a href="https://drive.google.com/drive/folders/1e6gqTyO59wYi_6U2R0TD87GblGnM04AM" target="_blank"><i class="fas fa-cloud"></i> Rapport détaillé</a>
+                        <span class="project-btn disabled">
+                            <i class="fas fa-lock"></i> Academic Project
+                        </span>
                     </div>
                 </div>
-            </div>
-            
-            <!-- PROJET 4 - LCS Parallèle -->
-            <div class="project-item">
-                <div class="project-icon">
-                    <i class="fas fa-code-branch"></i>
-                </div>
-                <div class="project-content">
-                    <h3>LCS Parallèle</h3>
-                    <p class="project-category">Algorithmique & Parallélisme</p>
-                    <p class="project-desc">Implémentation du Longest Common Subsequence avec parallélisation par diagonales (MPI, CUDA).</p>
+
+                <div class="project-item">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <div class="project-head">
+                            <p class="project-category">Security & Cloud</p>
+                            <h3>Password Strength Analyzer</h3>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        Built a password analysis solution with blacklist verification and deployed it
+                        using multiple Azure cloud services.
+                    </p>
+                    <div class="project-tags">
+                        <span>Azure</span>
+                        <span>Password Security</span>
+                        <span>Cloud</span>
+                    </div>
                     <div class="project-links">
-                        <a href="https://drive.google.com/drive/folders/1U7C1aLF3QlbqMZLjSFpexXF0h8SMD6-P" target="_blank"><i class="fab fa-github"></i> Code source</a>
-                        <a href="https://drive.google.com/drive/folders/1RQPF3M7GKxehBT4D6FJrIXof5B9StkI9" target="_blank"><i class="fas fa-file-pdf"></i> Rapport détaillé</a>
+                        <a href="Report Password-Analyzer.pdf" target="_blank" class="project-btn secondary">
+                            <i class="fas fa-file-pdf"></i> Report
+                        </a>
                     </div>
                 </div>
-            </div>
-            
-            <!-- PROJET 5 - Brute Force Protection -->
-            <div class="project-item">
-                <div class="project-icon">
-                    <i class="fas fa-shield"></i>
-                </div>
-                <div class="project-content">
-                    <h3>Brute Force Protection</h3>
-                    <p class="project-category">Sécurité Web</p>
-                    <p class="project-desc">Analyse et implémentation de mécanismes de protection contre les attaques par force brute (rate limiting, logging).</p>
+
+                <div class="project-item">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <div class="project-head">
+                            <p class="project-category">Algorithms & High Performance Computing</p>
+                            <h3>LCS Parallel Algorithm</h3>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        Implemented the Longest Common Subsequence algorithm and parallelized it using
+                        diagonal wavefront computation with MPI and CUDA.
+                    </p>
+                    <div class="project-tags">
+                        <span>LCS</span>
+                        <span>MPI</span>
+                        <span>CUDA</span>
+                        <span>Dynamic Programming</span>
+                    </div>
                     <div class="project-links">
-                        <a href="https://drive.google.com/drive/folders/1Aw61AoacOuryXVtmZwrpWdpKm66CMiIF" target="_blank"><i class="fas fa-shield-alt"></i> Rapport détaillé</a>
+                        <a href="RAPPORT DU PROJET LCS V.FINALE.pdf" target="_blank" class="project-btn secondary">
+                            <i class="fas fa-file-pdf"></i> Report
+                        </a>
                     </div>
                 </div>
-            </div>
-            
-            <!-- PROJET 6 - Threads Pool Simulation -->
-            <div class="project-item">
-                <div class="project-icon">
-                    <i class="fas fa-microchip"></i>
-                </div>
-                <div class="project-content">
-                    <h3>Threads Pool</h3>
-                    <p class="project-category">Systèmes & Concurrence</p>
-                    <p class="project-desc">Simulation d'accès concurrents à une ressource partagée avec threads et sémaphores.</p>
+
+                <div class="project-item">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-shield"></i>
+                        </div>
+                        <div class="project-head">
+                            <p class="project-category">Web Security</p>
+                            <h3>Brute Force Protection</h3>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        Studied and implemented protective mechanisms against brute-force attacks,
+                        including rate limiting and logging strategies.
+                    </p>
+                    <div class="project-tags">
+                        <span>Web Security</span>
+                        <span>Protection</span>
+                        <span>Logging</span>
+                    </div>
                     <div class="project-links">
-                        <a href="https://drive.google.com/drive/folders/10UdwjyqhW4WC2A92wY0oB9053MszthPb" target="_blank"><i class="fab fa-github"></i> Code source</a>
-                        <a href="https://drive.google.com/drive/folders/1kScN4l2pkzaPOVcozAc6JUHfaW_PDcJ6" target="_blank"><i class="fas fa-file-pdf"></i> Rapport détaillé</a>
+                        <a href="brute-force-projet (1).pdf" target="_blank" class="project-btn secondary">
+                            <i class="fas fa-file-pdf"></i> Report
+                        </a>
+
+                        <a href="Blue Modern Technology Cybersecurity Presentation (2).pdf" target="_blank" class="project-btn secondary">
+                            <i class="fas fa-file-powerpoint"></i> Presentation
+                        </a>
                     </div>
                 </div>
-            </div>
-            
-            <!-- PROJET 7 - Générateur Documents IT6 -->
-            <div class="project-item">
-                <div class="project-icon">
-                    <i class="fas fa-file-alt"></i>
-                </div>
-                <div class="project-content">
-                    <h3>Doc Generator</h3>
-                    <p class="project-category">Développement Web</p>
-                    <p class="project-desc">Application web de génération automatique de documents (attestations, rapports) avec templates PDF.</p>
+
+                <div class="project-item">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="project-head">
+                            <p class="project-category">Systems & Concurrency</p>
+                            <h3>Thread Pool Simulation</h3>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        Simulated concurrent access to shared resources using threads and semaphores
+                        to study synchronization behavior and resource control.
+                    </p>
+                    <div class="project-tags">
+                        <span>Threads</span>
+                        <span>Semaphores</span>
+                        <span>C</span>
+                    </div>
                     <div class="project-links">
-                        <span class="disabled"><i class="fas fa-lock"></i> Projet entreprise (confidentiel)</span>
+                        <a href="PROJET pthreads AYMAN BOUISSEHAK (2).pdf" target="_blank" class="project-btn secondary">
+                            <i class="fas fa-file-pdf"></i> Report
+                        </a>
                     </div>
                 </div>
+
+                <div class="project-item">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-file-lines"></i>
+                        </div>
+                        <div class="project-head">
+                            <p class="project-category">Web Development & Business Automation</p>
+                            <h3>Document Generator</h3>
+                        </div>
+                    </div>
+                    <p class="project-desc">
+                        Developed an enterprise-oriented web application for automatic document generation,
+                        including PDF workflows and administrative use cases.
+                    </p>
+                    <div class="project-tags">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>PDF</span>
+                        <span>Automation</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-btn disabled">
+                            <i class="fas fa-lock"></i> Confidential Project
+                        </span>
+                    </div>
+                </div>
+
             </div>
-            
-        </div>
-        
+        </section>
+
     </div>
 </main>
+
+<footer class="site-footer">
+    <div class="container footer-content">
+        
+        <div class="footer-brand">
+            <img src="logo-ayman.png" alt="Ayman Bouissehak logo" class="footer-logo">
+            <div class="footer-brand-text">
+                <h3>Ayman Bouissehak</h3>
+                <p>Cybersecurity Engineering Student</p>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <a href="https://github.com/AYMANBOUISSEHAK/" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/ayman-bouissehak-b19950394/" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:bouissehak.ayman@gmail.com">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+        </div>
+
+    </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
