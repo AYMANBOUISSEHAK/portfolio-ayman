@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayman Bouissehak – Projects</title>
-    <meta name="description" content="Cybersecurity, parallel computing, cloud, and system security projects by Ayman Bouissehak.">
-    <link rel="stylesheet" href="style.css?v=2">
+    <title>Projets – Ayman Bouissehak</title>
+    <link rel="stylesheet" href="style.css?v=3">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -13,323 +12,117 @@
 <nav class="navbar">
     <div class="container">
         <div class="logo">
-            <img src="logo-ayman.png" alt="Ayman Bouissehak logo" class="logo-img">
+            <a href="index.html">
+                <span class="logo-badge">AB</span>
+                <span class="logo-text">AYMAN BOUISSEHAK</span>
+            </a>
         </div>
-
         <ul class="nav-links">
-            <li><a href="index.html">About</a></li>
-            <li><a href="toolbox.html">Toolbox</a></li>
-            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="index.html">Profil</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            <li><a href="experience.html">Expériences</a></li>
+            <li><a href="projects.html" class="active">Projets</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
+        <div class="nav-actions">
+            <a href="CV_Ayman_Bouissehak_SOC_Blue_Team.pdf" target="_blank" class="btn-cv">
+                <i class="fas fa-file-pdf"></i> Mon CV
+            </a>
         </div>
     </div>
 </nav>
 
-<main class="page projects-page">
-    <div class="container">
-
-        <section class="projects-hero">
-            <p class="projects-kicker">Selected Work</p>
-            <h1 class="section-title">Projects</h1>
-            <p class="section-intro">
-                A selection of projects in cybersecurity, parallel computing, system protection,
-                and secure application development.
-            </p>
-        </section>
-
-        <section class="featured-project">
-            <div class="featured-badge">Featured Project</div>
-
-            <div class="featured-content">
-                <div class="featured-left">
-                    <div class="featured-icon">
-                        <i class="fas fa-shield-halved"></i>
-                    </div>
-                </div>
-
-                <div class="featured-right">
-                    <p class="featured-category">Cybersecurity & Artificial Intelligence</p>
-                    <h2>PhishGuard AI</h2>
-                    <p class="featured-desc">
-                        Developed an intelligent phishing detection application with chatbot support
-                        and suspicious URL analysis in real time. This project combines cybersecurity
-                        and AI to improve threat detection and user awareness.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>AI</span>
-                        <span>Phishing Detection</span>
-                        <span>Cybersecurity</span>
-                        <span>Chatbot</span>
-                    </div>
-
-                    <div class="project-links project-links-featured">
-                        <a href="https://github.com/AYMANBOUISSEHAK/phishguard-ai" target="_blank" class="project-btn">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="Rapport PHISHGUARD .pdf" target="_blank" class="project-btn secondary">
-                            <i class="fas fa-file-pdf"></i> Report
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="projects-list">
-            <div class="projects-grid">
-
-                <div class="project-item">
-                    <div class="project-top">
-                        <div class="project-icon">
-                            <i class="fas fa-lock"></i>
-                        </div>
-                        <div class="project-head">
-                            <p class="project-category">Cryptography & Parallel Computing</p>
-                            <h3>RSA Parallel Encryption</h3>
-                        </div>
-                    </div>
-                    <p class="project-desc">
-                        Implemented RSA in sequential and parallel versions using MPI, CUDA, and UPC,
-                        with comparative performance benchmarks across architectures.
-                    </p>
-                    <div class="project-tags">
-                        <span>RSA</span>
-                        <span>MPI</span>
-                        <span>CUDA</span>
-                        <span>UPC</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="RAPPORT DU PROJET RSA.pdf" target="_blank" class="project-btn secondary">
-                            <i class="fas fa-file-pdf"></i> Report
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-top">
-                        <div class="project-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <div class="project-head">
-                            <p class="project-category">System Hardening & Security Testing</p>
-                            <h3>Enterprise OS Security Environment</h3>
-                        </div>
-                    </div>
-                    <p class="project-desc">
-                        Designed and secured an environment including Windows Server, Linux, and Kali,
-                        with SSH hardening, Active Directory configuration, and security testing.
-                    </p>
-                    <div class="project-tags">
-                        <span>Windows Server</span>
-                        <span>Linux</span>
-                        <span>Hardening</span>
-                        <span>Nmap</span>
-                    </div>
-                    <div class="project-links">
-                       <a href="Presentation OS-Hardering.pdf" target="_blank" class="project-btn secondary">
-    <i class="fas fa-file-pdf"></i> Presentation
-</a>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-top">
-                        <div class="project-icon">
-                            <i class="fas fa-key"></i>
-                        </div>
-                        <div class="project-head">
-                            <p class="project-category">Security & Cloud</p>
-                            <h3>Password Strength Analyzer</h3>
-                        </div>
-                    </div>
-                    <p class="project-desc">
-                        Built a password analysis solution with blacklist verification and deployed it
-                        using multiple Azure cloud services.
-                    </p>
-                    <div class="project-tags">
-                        <span>Azure</span>
-                        <span>Password Security</span>
-                        <span>Cloud</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="Report Password-Analyzer.pdf" target="_blank" class="project-btn secondary">
-                            <i class="fas fa-file-pdf"></i> Report
-                        </a>
-                    </div>
-                </div>
-                <div class="project-item">
-    <div class="project-top">
-        <div class="project-icon">
-            <i class="fas fa-brain"></i>
+<main class="page-content">
+    <section class="container" style="padding: 50px 0;">
+        <div class="section-header">
+            <p class="section-kicker">TRAVAUX & RÉALISATIONS</p>
+            <h1 class="section-title">Projets en Cybersécurité & Ingénierie</h1>
         </div>
-        <div class="project-head">
-            <p class="project-category">Cybersecurity & Artificial Intelligence</p>
-            <h3>LLMs for SOC Alert Analysis</h3>
-        </div>
-    </div>
-    <p class="project-desc">
-    Designed an AI-assisted approach for helping a Security Operations Center analyze security alerts
-    using Large Language Models, with a focus on alert interpretation, triage assistance, and faster analyst support.
-</p>
-    <div class="project-tags">
-        <span>LLMs</span>
-        <span>SOC</span>
-        <span>Security Alerts</span>
-        <span>Incident Analysis</span>
-    </div>
-    <div class="project-links">
-        <span class="project-btn disabled">
-            <i class="fas fa-lock"></i> Report Coming Soon
-        </span>
-    </div>
-</div>
 
-                <div class="project-item">
-                    <div class="project-top">
-                        <div class="project-icon">
-                            <i class="fas fa-code-branch"></i>
-                        </div>
-                        <div class="project-head">
-                            <p class="project-category">Algorithms & High Performance Computing</p>
-                            <h3>LCS Parallel Algorithm</h3>
-                        </div>
-                    </div>
-                    <p class="project-desc">
-                        Implemented the Longest Common Subsequence algorithm and parallelized it using
-                        diagonal wavefront computation with MPI and CUDA.
-                    </p>
-                    <div class="project-tags">
-                        <span>LCS</span>
-                        <span>MPI</span>
-                        <span>CUDA</span>
-                        <span>Dynamic Programming</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="RAPPORT DU PROJET LCS V.FINALE.pdf" target="_blank" class="project-btn secondary">
-                            <i class="fas fa-file-pdf"></i> Report
-                        </a>
-                    </div>
-                </div>
+        <div class="overview-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px;">
 
-                <div class="project-item">
-                    <div class="project-top">
-                        <div class="project-icon">
-                            <i class="fas fa-shield"></i>
-                        </div>
-                        <div class="project-head">
-                            <p class="project-category">Web Security</p>
-                            <h3>Brute Force Protection</h3>
-                        </div>
-                    </div>
-                    <p class="project-desc">
-                        Studied and implemented protective mechanisms against brute-force attacks,
-                        including rate limiting and logging strategies.
-                    </p>
-                    <div class="project-tags">
-                        <span>Web Security</span>
-                        <span>Protection</span>
-                        <span>Logging</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="brute-force-projet (1).pdf" target="_blank" class="project-btn secondary">
-                            <i class="fas fa-file-pdf"></i> Report
-                        </a>
-
-                        <a href="Blue Modern Technology Cybersecurity Presentation (2).pdf" target="_blank" class="project-btn secondary">
-                            <i class="fas fa-file-powerpoint"></i> Presentation
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-top">
-                        <div class="project-icon">
-                            <i class="fas fa-microchip"></i>
-                        </div>
-                        <div class="project-head">
-                            <p class="project-category">Systems & Concurrency</p>
-                            <h3>Thread Pool Simulation</h3>
-                        </div>
-                    </div>
-                    <p class="project-desc">
-                        Simulated concurrent access to shared resources using threads and semaphores
-                        to study synchronization behavior and resource control.
-                    </p>
-                    <div class="project-tags">
-                        <span>Threads</span>
-                        <span>Semaphores</span>
-                        <span>C</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="PROJET pthreads AYMAN BOUISSEHAK (2).pdf" target="_blank" class="project-btn secondary">
-                            <i class="fas fa-file-pdf"></i> Report
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-top">
-                        <div class="project-icon">
-                            <i class="fas fa-file-lines"></i>
-                        </div>
-                        <div class="project-head">
-                            <p class="project-category">Web Development & Business Automation</p>
-                            <h3>Document Generator</h3>
-                        </div>
-                    </div>
-                    <p class="project-desc">
-                        Developed an enterprise-oriented web application for automatic document generation,
-                        including PDF workflows and administrative use cases.
-                    </p>
-                    <div class="project-tags">
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>PDF</span>
-                        <span>Automation</span>
-                    </div>
-                    <div class="project-links">
-                        <span class="project-btn disabled">
-                            <i class="fas fa-lock"></i> Confidential Project
-                        </span>
-                    </div>
-                </div>
-
+            <!-- WAF ModSecurity -->
+            <div class="overview-card">
+                <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3 style="color: #00bcd4;">WAF ModSecurity & OWASP CRS</h3>
+                <p style="color: #888; font-size: 0.9em; margin-bottom: 10px;">Orange Business</p>
+                <p style="color: #aaa; line-height: 1.6;">Protection d'une infrastructure web contre le Top 10 OWASP, focus sur les injections SQL et centralisation des alertes.</p>
             </div>
-        </section>
 
-    </div>
+            <!-- LLM SOC -->
+            <div class="overview-card">
+                <div class="card-icon"><i class="fas fa-robot"></i></div>
+                <h3 style="color: #00bcd4;">Using LLMs to Assist a SOC</h3>
+                <p style="color: #888; font-size: 0.9em; margin-bottom: 10px;">IA & Sécurité Défensive</p>
+                <p style="color: #aaa; line-height: 1.6;">Assistance d'un SOC par grands modèles de langage pour l'analyse et la qualification des alertes de sécurité.</p>
+            </div>
+
+            <!-- PhishGuard AI -->
+            <div class="overview-card">
+                <div class="card-icon"><i class="fas fa-fish"></i></div>
+                <h3 style="color: #00bcd4;">PhishGuard AI</h3>
+                <p style="color: #888; font-size: 0.9em; margin-bottom: 10px;">IA & Anti-Phishing</p>
+                <p style="color: #aaa; line-height: 1.6;">Détection de phishing avec chatbot intelligent et analyse d'URLs suspectes en temps réel.</p>
+            </div>
+
+            <!-- Hardening Linux DGSSI -->
+            <div class="overview-card">
+                <div class="card-icon"><i class="fas fa-terminal"></i></div>
+                <h3 style="color: #00bcd4;">Plateforme de Durcissement Linux</h3>
+                <p style="color: #888; font-size: 0.9em; margin-bottom: 10px;">DGSSI / CIS Benchmarks</p>
+                <p style="color: #aaa; line-height: 1.6;">Conception d'un moteur d'audit et de remédiation automatisée basé sur les CIS Benchmarks et la DNSSI avec sauvegarde/rollback.</p>
+            </div>
+
+            <!-- Password Analyzer -->
+            <div class="overview-card">
+                <div class="card-icon"><i class="fas fa-key"></i></div>
+                <h3 style="color: #00bcd4;">Password Analyzer</h3>
+                <p style="color: #888; font-size: 0.9em; margin-bottom: 10px;">Cloud Azure</p>
+                <p style="color: #aaa; line-height: 1.6;">Analyse de la force des mots de passe avec blacklist, déployé sur Azure à l'aide de 5 services Cloud.</p>
+            </div>
+
+            <!-- Enterprise OS Security -->
+            <div class="overview-card">
+                <div class="card-icon"><i class="fas fa-desktop"></i></div>
+                <h3 style="color: #00bcd4;">Enterprise OS Security Environment</h3>
+                <p style="color: #888; font-size: 0.9em; margin-bottom: 10px;">Sécurité Système</p>
+                <p style="color: #aaa; line-height: 1.6;">Conception, mise en œuvre, tests et durcissement complet d'un système d'exploitation d'entreprise.</p>
+            </div>
+
+            <!-- Brute Force Protection -->
+            <div class="overview-card">
+                <div class="card-icon"><i class="fas fa-lock"></i></div>
+                <h3 style="color: #00bcd4;">Brute Force Protection</h3>
+                <p style="color: #888; font-size: 0.9em; margin-bottom: 10px;">Sécurité Web</p>
+                <p style="color: #aaa; line-height: 1.6;">Système de rate limiting, logging avancé et protection dynamique contre les attaques par force brute.</p>
+            </div>
+
+            <!-- RSA Parallèle -->
+            <div class="overview-card">
+                <div class="card-icon"><i class="fas fa-calculator"></i></div>
+                <h3 style="color: #00bcd4;">RSA Parallèle (MPI, CUDA, UPC)</h3>
+                <p style="color: #888; font-size: 0.9em; margin-bottom: 10px;">Cryptographie</p>
+                <p style="color: #aaa; line-height: 1.6;">Implémentation séquentielle et parallèle de l'algorithme RSA avec benchmarks de performance.</p>
+            </div>
+
+        </div>
+    </section>
 </main>
 
 <footer class="site-footer">
     <div class="container footer-content">
-        
         <div class="footer-brand">
-            <img src="logo-ayman.png" alt="Ayman Bouissehak logo" class="footer-logo">
-            <div class="footer-brand-text">
-                <h3>Ayman Bouissehak</h3>
-                <p>Cybersecurity Engineering Student</p>
-            </div>
+            <h3>Ayman Bouissehak</h3>
+            <p>Ingénieur en cybersécurité SOC & Blue Team</p>
         </div>
-
         <div class="footer-links">
-            <a href="https://github.com/AYMANBOUISSEHAK/" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/ayman-bouissehak-b19950394/" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="mailto:bouissehak.ayman@gmail.com">
-                <i class="fas fa-envelope"></i> Email
-            </a>
+            <a href="https://github.com/AYMANBOUISSEHAK/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/ayman-bouissehak" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:bouissehak.ayman@gmail.com"><i class="fas fa-envelope"></i> Email</a>
         </div>
-
     </div>
 </footer>
 
-<script src="script.js?v=2"></script>
 </body>
 </html>
