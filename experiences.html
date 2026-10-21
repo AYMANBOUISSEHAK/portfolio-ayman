@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expériences – Ayman Bouissehak</title>
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=99">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .company-logo {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            border-radius: 8px;
+            background: #fff;
+            padding: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .exp-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,18 +35,19 @@
             </a>
         </div>
         <ul class="nav-links">
-    <li><a href="index.html">Profil</a></li>
-    <li><a href="skills.html">Compétences</a></li>
-    <li><a href="experiences.html">Expériences</a></li>
-    <li><a href="projects.html">Projets</a></li>
-    <li><a href="certifications.html">Certifications</a></li>
-    <li><a href="contact.html">Contact</a></li>
-</ul>
+            <li><a href="index.html">Profil</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            <li><a href="experiences.html" class="active">Expériences</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
         <div class="nav-actions">
-    <a href="CV_Ayman_Bouissehak.pdf" target="_blank" class="btn-cv">
-        <i class="fas fa-file-pdf"></i> Mon CV
-    </a>
-</div>
+            <a href="CV_Ayman_Bouissehak.pdf" target="_blank" class="btn-cv">
+                <i class="fas fa-file-pdf"></i> Mon CV
+            </a>
+        </div>
+    </div>
 </nav>
 
 <main class="page-content">
@@ -43,10 +61,13 @@
 
             <!-- Stage Orange Business -->
             <div class="overview-card" style="margin-bottom: 25px;">
-                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px;">
-                    <div>
-                        <h2 style="color: #00bcd4; margin-bottom: 5px;">Cyber Security Intern</h2>
-                        <h3 style="font-size: 1.1em; color: #ccc;">Orange Business · Rabat (hybride)</h3>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
+                    <div class="exp-header">
+                        <img src="logo_orange.png" alt="Orange Business Logo" class="company-logo">
+                        <div>
+                            <h2 style="color: #00bcd4; margin-bottom: 2px;">Cyber Security Intern</h2>
+                            <h3 style="font-size: 1em; color: #ccc;">Orange Business · Rabat (hybride)</h3>
+                        </div>
                     </div>
                     <span class="status-badge" style="background: rgba(0,188,212,0.1); color: #00bcd4; border: 1px solid #00bcd4;">Juil. 2026 – Août 2026</span>
                 </div>
@@ -58,10 +79,13 @@
 
             <!-- Stage DGSSI -->
             <div class="overview-card" style="margin-bottom: 25px;">
-                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px;">
-                    <div>
-                        <h2 style="color: #00bcd4; margin-bottom: 5px;">Cyber Security Intern</h2>
-                        <h3 style="font-size: 1.1em; color: #ccc;">DGSSI (Direction Générale de la Sécurité des Systèmes d'Information) · Rabat</h3>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
+                    <div class="exp-header">
+                        <img src="logo_dgssi.jpeg" alt="DGSSI Logo" class="company-logo">
+                        <div>
+                            <h2 style="color: #00bcd4; margin-bottom: 2px;">Cyber Security Intern</h2>
+                            <h3 style="font-size: 1em; color: #ccc;">DGSSI (Direction Générale de la Sécurité des Systèmes d'Information) · Rabat</h3>
+                        </div>
                     </div>
                     <span class="status-badge" style="background: rgba(0,188,212,0.1); color: #00bcd4; border: 1px solid #00bcd4;">Juin 2026 – Juil. 2026</span>
                 </div>
@@ -73,10 +97,13 @@
 
             <!-- Stage IT6 Consulting -->
             <div class="overview-card" style="margin-bottom: 25px;">
-                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px;">
-                    <div>
-                        <h2 style="color: #00bcd4; margin-bottom: 5px;">Stagiaire en développement web</h2>
-                        <h3 style="font-size: 1.1em; color: #ccc;">IT6 Consulting · Rabat</h3>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
+                    <div class="exp-header">
+                        <img src="it6-logo.png" alt="IT6 Consulting Logo" class="company-logo">
+                        <div>
+                            <h2 style="color: #00bcd4; margin-bottom: 2px;">Stagiaire en développement web</h2>
+                            <h3 style="font-size: 1em; color: #ccc;">IT6 Consulting · Rabat</h3>
+                        </div>
                     </div>
                     <span class="status-badge" style="background: rgba(255,255,255,0.05); color: #888;">Juin 2025 – Août 2025</span>
                 </div>
@@ -88,10 +115,13 @@
 
             <!-- Stage Ministère de la Justice -->
             <div class="overview-card" style="margin-bottom: 25px;">
-                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px;">
-                    <div>
-                        <h2 style="color: #00bcd4; margin-bottom: 5px;">Stagiaire (Observation & Archivage)</h2>
-                        <h3 style="font-size: 1.1em; color: #ccc;">Ministère de la Justice · Maroc</h3>
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px;">
+                    <div class="exp-header">
+                        <img src="minister-logo.jpeg" alt="Ministère de la Justice Logo" class="company-logo">
+                        <div>
+                            <h2 style="color: #00bcd4; margin-bottom: 2px;">Stagiaire (Observation & Archivage)</h2>
+                            <h3 style="font-size: 1em; color: #ccc;">Ministère de la Justice · Maroc</h3>
+                        </div>
                     </div>
                     <span class="status-badge" style="background: rgba(255,255,255,0.05); color: #888;">Juil. 2024 – Août 2024</span>
                 </div>
